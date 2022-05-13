@@ -1,19 +1,33 @@
 @font-face {
     font-family: 'rubiklight';
-    src: url('../fonts/rubik-variablefont_wght-webfont.woff2') format('woff2'), 
-         url('../fonts/rubik-variablefont_wght-webfont.woff') format('woff');
-    font-weight: SemiBold;
-    font-style: SemiBold;
+    src: url('../fonts/rubik/rubik-variablefont_wght-webfont.woff2') format('woff2'), 
+         url('../fonts/rubik/rubik-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pt_sansregular';
+    src: url('../fonts/ptSans/ptsans-regular-webfont.woff2') format('woff2'), 
+         url('../fonts/ptSans/ptsans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #cc8df7;
 }
 
 h1 {
     font-family: 'rubiklight';
+    font-size: 50px;
 }
 
 .pageTitle {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  font-weight: 900;
 }
 
 .coverIMG {
@@ -23,6 +37,27 @@ h1 {
   margin-right: auto;
 }
 
-body {
-  background-color: #cc8df7;
+.navbar {
+    list-style-type: none;
+    margin: 30px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbarList {
+  float: left;
+}
+
+.navbarList a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration-line: none;
+  font-family: 'pt_sansregular';
+}
+
+.navbarList a:hover {
+  background-color: #111;
 }
