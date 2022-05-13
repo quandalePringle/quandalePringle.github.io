@@ -2,8 +2,8 @@
     font-family: 'rubiklight';
     src: url('../fonts/rubik-variablefont_wght-webfont.woff2') format('woff2'), 
          url('../fonts/rubik-variablefont_wght-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    font-weight: SemiBold;
+    font-style: SemiBold;
 }
 
 h1 {
@@ -12,4 +12,17 @@ h1 {
 
 .pageTitle {
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.coverIMG {
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-color: #cc8df7;
 }
