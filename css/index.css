@@ -1,3 +1,4 @@
+/*CUSTOM FONTS*/
 @font-face {
     font-family: 'rubiklight';
     src: url('../fonts/rubik/rubik-variablefont_wght-webfont.woff2') format('woff2'), 
@@ -14,6 +15,103 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'nunito_sansblack';
+    src: url('../fonts/nSans/nunitosans-black-webfont.woff2') format('woff2'), 
+         url('../fonts/nSansnunitosans-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nunito_sansblack_italic';
+    src: url('../fonts/nSans/nunitosans-blackitalic-webfont.woff2') format('woff2'), 
+         url('../fonts/nSansnunitosans-blackitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nunito_sansextrabold';
+    src: url('../fonts/nSans/nunitosans-extrabold-webfont.woff2') format('woff2'), 
+         url('../fonts/nSansnunitosans-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nunito_sansextrabold_italic';
+    src: url('../fonts/nSans/nunitosans-extrabolditalic-webfont.woff2') format('woff2'), 
+         url('../fonts/nSansnunitosans-extrabolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ubuntubold';
+    src: url('../fonts/ubuntu/ubuntu-bold-webfont.woff2') format('woff2'), 
+         url('../fonts/ubuntu/ubuntu-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ubuntubold_italic';
+    src: url('../fonts/ubuntu/ubuntu-bolditalic-webfont.woff2') format('woff2'), 
+         url('../fonts/ubuntu/ubuntu-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ubuntuitalic';
+    src: url('../fonts/ubuntu/ubuntu-italic-webfont.woff2') format('woff2'), 
+         url('../fonts/ubuntu/ubuntu-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ubuntulight';
+    src: url('../fonts/ubuntu/ubuntu-light-webfont.woff2') format('woff2'), 
+         url('../fonts/ubuntu/ubuntu-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ubuntulight_italic';
+    src: url('../fonts/ubuntu/ubuntu-lightitalic-webfont.woff2') format('woff2'), 
+         url('../fonts/ubuntu/ubuntu-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ubuntumedium';
+    src: url('../fonts/ubuntu/ubuntu-medium-webfont.woff2') format('woff2'), 
+         url('../fonts/ubuntu/ubuntu-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ubuntumedium_italic';
+    src: url('../fonts/ubuntu/ubuntu-mediumitalic-webfont.woff2') format('woff2'), 
+         url('../fonts/ubuntu/ubuntu-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ubunturegular';
+    src: url('../fonts/ubuntu/ubuntu-regular-webfont.woff2') format('woff2'), 
+         url('../fonts/ubuntu/ubuntu-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*TAG SPECIFIC CSS*/
 body {
     background-color: #cc8df7;
 }
@@ -21,6 +119,18 @@ body {
 h1 {
     font-family: 'rubiklight';
     font-size: 50px;
+}
+
+h2 {
+    font-family: nunito_sansextrabold;
+    font-size: 25px;
+}
+
+/*CLASS SPECIFIC CSS*/
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 .pageTitle {
@@ -37,16 +147,38 @@ h1 {
   margin-right: auto;
 }
 
+.coverIMGdesc {
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: pt_sansregular;
+    font-size: 12px;
+}
+
+.active {
+    background-color: #474261;
+}
+
 .navbar {
     list-style-type: none;
-    margin: 30px;
+    width: 100%;
     padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
     overflow: hidden;
-    background-color: #333;
+    background-color: #6c6594;
+    position: sticky;
+    border-radius: 5px;
 }
 
 .navbarList {
   float: left;
+  border-right: 1px solid #bbb;
+}
+
+.navbarList:last-child {
+    border-right: none;
 }
 
 .navbarList a {
@@ -60,4 +192,17 @@ h1 {
 
 .navbarList a:hover {
   background-color: #111;
+}
+
+.subtitle {
+    margin-left: 13px;
+    display: inline-block;
+}
+
+.bodyTXT {
+    font-family: ubunturegular;
+    margin-left: 13px;
+    margin-right: 14px;
+    text-align: justify;
+    text-justify: inter-word;
 }
