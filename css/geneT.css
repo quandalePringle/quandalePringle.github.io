@@ -185,7 +185,7 @@ h2 {
 }
 
 .subtitle {
-    margin-left: 13px;
+    margin-left: 200px;
     display: inline-block;
 }
 
@@ -193,4 +193,12 @@ h2 {
     font-family: ubunturegular, sans-serif;
     margin-left: 200px;
     margin-right: 200px;
+}
+
+.bodyTXT {
+    font-family: ubunturegular, sans-serif;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: justify;
+    text-justify: inter-word;
 }
